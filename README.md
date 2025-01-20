@@ -13,4 +13,4 @@ There's a lot of work to do and I think you're going to like this exciting pytho
 ## Current Agendas
 - Hunting down good C Libraries, Luckily I already plan on using yyjson for that seeing how python allocators can be used.
 - Pretty much writing this whole library and giving it integrity.
-
+- having less speghetti code than msgspec that documents straight to the point.
