@@ -12,5 +12,5 @@ There's a lot of work to do and I think you're going to like this exciting pytho
 
 ## Current Agendas
 - Hunting down good C Libraries, Luckily I already plan on using yyjson for that seeing how python allocators can be used.
-- Pretty writing this whole library and giving it integrity.
+- Pretty much writing this whole library and giving it integrity.
 
