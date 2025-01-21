@@ -32,7 +32,7 @@ cdef MISSING = _MISSING
 # The Differences with msgspec fields vs ours
 # 1. written in Cython and not in C For a reason which was for making this code easy as possible to maintain
 # 2. metadata variable was added to allow for other features to be added onto the fields for friendlier 
-#    customization this lack of customization as wells as ease of mergability within msgspec kinda pissed me off.
+#    customization this lack of customization as well as ease of mergability within msgspec kinda pissed me off.
 
 # 3. To use metadata direcly, I added in a new protocol which is called
 # __post_new__(cls, ...) To Allow you to make custom classes at your own discreation.
