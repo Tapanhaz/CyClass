@@ -5,13 +5,6 @@ There's a lot of work to do and I think you're going to like this exciting pytho
 ## Goals with this library
 - Providing a Baseclass Just like Msgspec does but with better maintainability with the use of cython
 - The Ability of being able to develop extensions such as SQLAlchemy which I am already commited to just building in as a bonus.
-- 
-## Current Agendas
-- Hunting down good C Libraries, Luckily I already plan on using yyjson for that seeing how python allocators can be used.
-- Pretty much writing this whole library and giving it integrity.
-- having less speghetti code than msgspec that documents straight to the point.
-
-As of making this repo I've hit a few roadbumps that need solving 
 
 ## Updates
 - I am resuming this project but it will be massively rewritten.
