@@ -4,12 +4,8 @@ There's a lot of work to do and I think you're going to like this exciting pytho
 
 ## Goals with this library
 - Providing a Baseclass Just like Msgspec does but with better maintainability with the use of cython
-- using yyjson to serlize CyClass dataclasses and it's feilds with a fast and memory-safe approch
-  to compete with pydantic and orjson.
-- Providing ways to bind sqlalchemy and CyClass together.
-- Unlike Msgspec, Fields can be (maybe subclassable) and easy to build off of so that sqlalchemy can be easily binded.
-- Providing C Libraries to serlize dataclass to different file formats such as csv, json, yaml, toml that all get written as bytes objects.
-
+- The Ability of being able to develop extensions such as SQLAlchemy which I am already commited to just building in as a bonus.
+- 
 ## Current Agendas
 - Hunting down good C Libraries, Luckily I already plan on using yyjson for that seeing how python allocators can be used.
 - Pretty much writing this whole library and giving it integrity.
@@ -17,5 +13,11 @@ There's a lot of work to do and I think you're going to like this exciting pytho
 
 As of making this repo I've hit a few roadbumps that need solving 
 
-## Current Issues
-- There is none in fact this library is not needed at all, sorry to dissapoint since I just solved the msgspec and sqlalchemy problems. https://github.com/Vizonex/SQLTable 
+## Updates
+- I am resuming this project but it will be massively rewritten.
+- `__cinit__` is python's `__new__` method (Shocking, I know...) so metaclasses can be made with high performance.
+- CWPack is going to be the new json serlizer and deserlizer and I modified a few things to make it "cython-acceptable"
+- Fields will be written in the same format as Msgspec only this time they are subclassable...
+- CodeWriter will use aiohttp's httpwriter's implementation
+- __SQLTable__ Extension is now going to be built-in with this project by checking if sqlalchemy was installed.
+- `Msgspec.Struct` , `dataclass`, `attrs` (maybe), `NamedTuple` support. Which means they all get serlized.
